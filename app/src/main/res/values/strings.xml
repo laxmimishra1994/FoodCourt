@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FoodCourt</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="qty">Qty:</string>
+    <string name="addToCart">Add to cart</string>
+    <string name="search_info_text">Search Food...</string>
+</resources>

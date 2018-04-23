@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="activity_vertical_margin">20dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="item_margin_large">16dp</dimen>
+    <dimen name="avg_margin">6dp</dimen>
+    <dimen name="icon_right_margin">12dp</dimen>
+    <dimen name="min_margin">2dp</dimen>
+    <dimen name="larger_text">30dp</dimen>
+    <dimen name="very_small_space">2dp</dimen>
+    <dimen name="small_space">4dp</dimen>
+    <dimen name="medium_space">6dp</dimen>
+    <dimen name="dimen_7dp">5dp</dimen>
+    <dimen name="extra_medium_space">8dp</dimen>
+    <dimen name="large_space">12dp</dimen>
+    <dimen name="extra_large_space">18dp</dimen>
+    <dimen name="double_extra_large_space">24dp</dimen>
+    <dimen name="left_margin_20dp">20dp</dimen>
+    <dimen name="top_margin_50dp">50dp</dimen>
+    <dimen name="medium_textSize">16sp</dimen>
+    <dimen name="dimen_14sp">14sp</dimen>
+    <dimen name="small_textSize">10sp</dimen>
+    <dimen name="top_margin_60dp">60dp</dimen>
+    <dimen name="left_margin_10dp">-10dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_88dp">88dp</dimen>
+    <dimen name="dimen_100dp">100dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_6dp">6dp</dimen>
+    <dimen name="button_height_small">28dp</dimen>
+    <dimen name="dimen_40sp">40sp</dimen>
+    <dimen name="dimen_35sp">35sp</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="popup_width">300dp</dimen>
+    <dimen name="popup_height">600dp</dimen>
+    <dimen name="dime_10sp">11sp</dimen>
+    <dimen name="dimen_12sp">12sp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">8sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_15sp">15sp</dimen>
+
+    <!--StepperIndicator-->
+    <dimen name="stpi_default_circle_radius">15dp</dimen>
+    <dimen name="stpi_default_circle_stroke_width">2dp</dimen>
+    <dimen name="stpi_default_indicator_radius">4dp</dimen>
+    <dimen name="stpi_default_line_stroke_width">2dp</dimen>
+    <dimen name="stpi_default_line_margin">0dp
+    </dimen> <!--controls the line width between two indicators-->
+    <dimen name="stpi_default_text_size">14sp</dimen>
+    <dimen name="stpi_default_bottom_indicator_height">3dp</dimen>
+    <dimen name="stpi_default_bottom_indicator_width">50dp</dimen>
+    <dimen name="stpi_default_bottom_indicator_margin_top">10dp</dimen>
+    <dimen name="stpi_default_label_size">12sp</dimen>
+    <dimen name="stpi_default_label_margin_top">2dp</dimen>
+    <dimen name="stpi_two_dp">2dp</dimen>
+    <dimen name="stpi_done_icon_size">18dp</dimen>
+
+    <dimen name="dimen_nav_img_24dp">24dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_20sp">20sp</dimen>
+    <!--StepperIndicator-->
+</resources>

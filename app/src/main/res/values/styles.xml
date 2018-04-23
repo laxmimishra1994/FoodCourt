@@ -1,0 +1,525 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:colorControlNormal">@android:color/darker_gray</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!-- This disables the black preview screen -->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:itemTextAppearance">@style/itemTextStyle.AppTheme</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LandingTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/gray_bg</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="CommonDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="titleBanner" parent="@android:style/TextAppearance">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="titleBlackTextBanner" parent="@android:style/TextAppearance">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/inActive</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="cardViewStyle" parent="CardView">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="cardViewStyle3" parent="CardView">
+        <item name="contentPadding">@dimen/extra_medium_space</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="cardViewStyle2" parent="CardView">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="contentPadding">@dimen/medium_space</item>
+    </style>
+
+
+    <style name="titleTextStyleSmallBlue" parent="AppTheme">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="titleTextStyleSmallGray" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="cardViewStyleInactive" parent="CardView">
+        <item name="android:background">@color/inActive</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="contentPadding">@dimen/medium_space</item>
+    </style>
+
+    <style name="QuickActionCardStyle" parent="CardView">
+        <item name="android:clickable">true</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">4dp</item>
+
+        <!--<item name="contentPadding">@dimen/large_space</item>-->
+        <item name="android:layout_marginLeft">@dimen/small_space</item>
+        <item name="android:layout_marginRight">@dimen/small_space</item>
+        <item name="android:layout_marginTop">@dimen/small_space</item>
+        <item name="android:layout_marginBottom">@dimen/small_space</item>
+    </style>
+
+    <style name="SwitchStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/switch_color</item>
+    </style>
+
+    <style name="titleTextStyleMediumBlue" parent="AppTheme">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColorHint">@color/inActive</item>
+    </style>
+
+    <style name="itemTextStyle.AppTheme" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@drawable/color_item_popup</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="titleTextStyleMediumPrimary" parent="AppTheme">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColorHint">@color/inActive</item>
+    </style>
+
+    <style name="titleTextStyleSmallAccent" parent="AppTheme">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="titleTextStyleLargeBlue" parent="AppTheme">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="titleTextStyleMoneyBlue" parent="AppTheme">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="titleBlackTextStyleMoneyBlue" parent="AppTheme">
+        <item name="android:textColor">@color/inActive</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+
+    <style name="textStyleInActive" parent="AppTheme">
+        <item name="android:textColor">@color/inActive</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="textStyleInActiveMedium" parent="AppTheme">
+        <item name="android:textColor">@color/transaction_history_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="textStyleInActiveSmall" parent="AppTheme">
+        <item name="android:textColor">@color/inActive</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="textStyleInActiveHeader" parent="AppTheme">
+        <item name="android:textColor">@color/inActive</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="dividerStyle" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/medium_space</item>
+        <item name="android:layout_marginBottom">@dimen/medium_space</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="whiteMedium" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white_sea_shell</item>
+    </style>
+
+    <style name="whiteSmall" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="whiteLarge" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="titleTextStyleWhiteLarge" parent="AppTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+
+    <style name="titleTextStyleGrayLarge" parent="AppTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/inActive</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="titleTextStyleWhite" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="titleTextStyleWhiteSmall" parent="AppTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="titleTextStyleWhiteMedium" parent="AppTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="titleTextStyleGrayMedium" parent="AppTheme">
+        <item name="android:textColor">@color/inActive</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="titleTextStyleCustomTextColorSmall" parent="AppTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+
+    <style name="blackMedium" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColorHint">@color/inActive</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="selectedSegmentStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="unselectedSegmentStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="blackMediumMarquee" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColorHint">@color/inActive</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="blackLarge" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColorHint">@color/inActive</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="blackSmall" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="blackSmallBold" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="blackSmallMarque" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="titleTextStyleBlack" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="blueSmall" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="blackTitleMediumText" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="blueSmallBold" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="blueMedium" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="blackMediumText" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="redMedium" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/hot</item>
+    </style>
+
+    <style name="yellowMedium" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/warm</item>
+    </style>
+
+    <style name="greenMedium" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/successColor</item>
+    </style>
+
+    <style name="blueMediumSizeCustom" parent="AppTheme">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="blueMediumBold" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="blueDarkMedium" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="blueDarkSmall" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="blueLarge" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="pinkLarge" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/dimen_35sp</item>
+    </style>
+
+    <style name="pinkMedium" parent="AppTheme">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="imageViewStyle" parent="AppTheme">
+        <item name="android:layout_marginRight">@dimen/medium_space</item>
+        <item name="android:layout_marginLeft">@dimen/medium_space</item>
+    </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">@color/white</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="toolbarStyle" parent="Base.ThemeOverlay.AppCompat">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="inputEditTextStyleLarge" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <style name="inputEditTextStyleLargeBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:textSize">@dimen/larger_text</item>
+    </style>
+
+    <style name="inputEditTextStyleMediumWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textSize">@dimen/medium_textSize</item>
+    </style>
+
+
+    <style name="MediumBlackInputLayout" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+    </style>
+
+    <style name="textStyleSmallBlack" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/inActive</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="MediumBlackEditText" parent="AppTheme">
+        <item name="android:paddingTop">@dimen/medium_space</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="smallCardViewStyle" parent="CardView">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">2dp</item>
+        <item name="contentPadding">4dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+
+    <style name="inputDividerStyle" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/medium_space</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginBottom">@dimen/medium_space</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="layoutStyle" parent="AppTheme">
+        <item name="android:paddingLeft">@dimen/large_space</item>
+        <item name="android:paddingRight">@dimen/large_space</item>
+        <item name="android:layout_marginTop">@dimen/medium_space</item>
+        <item name="android:layout_marginBottom">@dimen/medium_space</item>
+    </style>
+
+    <style name="MyDarkToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <!--<item name="android:background">@color/app_color</item>-->
+        <item name="android:background">@color/transparent</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="titleTextStyleLargeBlack" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColorHint">@color/inActive</item>
+    </style>
+
+    <color name="switch_color">#95dc6e</color>
+
+    <style name="inputEditTextStyleLargeWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="inputEditTextStyleLargeApp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <!--<item name="android:textSize">30sp</item>-->
+    </style>
+
+    <style name="inputRadioStyleLargeApp" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <style name="titleTextStyleApp" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">15sp</item>
+
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+
+    <style name="headingText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="headingBlackText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="titleTextStyleMoneyBlack" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+
+    <style name="textStyleSmall" parent="AppTheme">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Custom_Theme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        style="@style/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_space"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/foodImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="0.4"
+                android:src="@drawable/burger" />
+
+            <TextView
+                android:id="@+id/foodTitle"
+                style="@android:style/TextAppearance.DeviceDefault.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/extra_medium_space"
+                android:layout_marginTop="@dimen/extra_medium_space"
+                android:textColor="@color/colorAccent"
+                tools:text="Sandwich" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_space">
+
+                <TextView
+                    android:id="@+id/ingredientsTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ingredients"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ingredientsInfoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/medium_space"
+                    android:layout_toEndOf="@+id/ingredientsTitleText"
+                    tools:text="jbccbwiebciwebciweciwbci" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_space"
+                android:layout_marginTop="@dimen/extra_medium_space">
+
+                <TextView
+                    android:id="@+id/qtyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/qty"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_20sp" />
+
+                <TextView
+                    android:id="@+id/qtyNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/medium_space"
+                    android:layout_toEndOf="@+id/qtyTitle"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_20sp"
+                    tools:text="1" />
+
+                <ImageView
+                    android:id="@+id/minusImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/extra_large_space"
+                    android:layout_toEndOf="@+id/qtyNo"
+
+                    android:src="@drawable/ic_minus_symbol" />
+
+                <TextView
+                    android:id="@+id/itemCountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/medium_space"
+                    android:layout_toEndOf="@+id/minusImageView"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_20sp" />
+
+                <ImageView
+                    android:id="@+id/addImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/medium_space"
+                    android:layout_toEndOf="@+id/itemCountTextView"
+                    android:src="@drawable/ic_add_button" />
+
+                <Button
+                    android:id="@+id/addToCartButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/green_button"
+                    android:paddingLeft="@dimen/extra_large_space"
+                    android:paddingRight="@dimen/extra_large_space"
+                    android:text="@string/addToCart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
